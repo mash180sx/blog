@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Hijiri's blog at github]]></title>
+  <link href="http://mash180sx.github.com/blog/atom.xml" rel="self"/>
+  <link href="http://mash180sx.github.com/blog/"/>
+  <updated>2012-06-05T14:07:58+09:00</updated>
+  <id>http://mash180sx.github.com/blog/</id>
+  <author>
+    <name><![CDATA[Masa Shio]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Hello, octopress! Hello, github blog!]]></title>
+    <link href="http://mash180sx.github.com/blog/2012/06/05/hello/"/>
+    <updated>2012-06-05T12:39:00+09:00</updated>
+    <id>http://mash180sx.github.com/blog/2012/06/05/hello</id>
+    <content type="html"><![CDATA[<p>I&#8217;ll try to post an article through the octopress to github from today.</p>
+
+<p>I wrestled with JavaScript and node.js, and also touched
+on a variety of other languages, here about six months.
+However, I did not leave anything as a record,
+I decided to start recording, even little by little,
+something did, something struggled(has been struggle),
+and something to try.</p>
+
+<p>I chose the github for log, because I think it is the best  warehouse
+for development projects, and I think whether it is reasonable
+to place a blog near it.</p>
+
+<p>I think most of the records are for myself,
+but I want to be able to leave the articles for someone&#8217;s help.</p>
+
+<p>(and I try to write in English)</p>
+]]></content>
+  </entry>
+  
+</feed>
