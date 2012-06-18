@@ -4,7 +4,7 @@
   <title><![CDATA[Hijiri's blog at github]]></title>
   <link href="http://mash180sx.github.com/blog/atom.xml" rel="self"/>
   <link href="http://mash180sx.github.com/blog/"/>
-  <updated>2012-06-18T17:37:15+09:00</updated>
+  <updated>2012-06-18T18:16:29+09:00</updated>
   <id>http://mash180sx.github.com/blog/</id>
   <author>
     <name><![CDATA[Masa Shio]]></name>
@@ -20,7 +20,7 @@
     <id>http://mash180sx.github.com/blog/2012/06/18/memo-office-vmware-setting</id>
     <content type="html"><![CDATA[<p>My office is using the environment of the WindowsXP.
 Developing with node.js was inconvenient things on Windows XP.
-Therefore, recently, I began to develop in linux on VMware.
+Therefore, I began to develop in linux on VMware.
 Here, I&#8217;ll describe (for myself) how to build environment.</p>
 
 <h3>My office environment</h3>
@@ -182,7 +182,13 @@ Here, I&#8217;ll describe (for myself) how to build environment.</p>
 <li>$ sudo ln -s /usr/bin/nodejs /usr/local/bin/node</li>
 </ul>
 </li>
-<li><p>(setup npm proxy &#8211;> not necessary)</p></li>
+<li><p>setup npm proxy</p>
+
+<ul>
+<li>$ sudo npm set proxy &#8220;http://host.com:port/&#8221;</li>
+<li>$ sudo npm set https-proxy &#8220;http://host.com:port/&#8221;</li>
+</ul>
+</li>
 <li><p>setup mongodb Configure Package Management System (YUM)</p>
 
 <ul>
@@ -210,7 +216,14 @@ Here, I&#8217;ll describe (for myself) how to build environment.</p>
 <ul>
 <li>$ (sudo) yum update</li>
 <li>$ (sudo) yum install mongo-10gen mongo-10gen-server</li>
-<li>$ (sudo) /etc/rc.d/init.d/mongod start</li>
+<li><p>$ (sudo) /etc/rc.d/init.d/mongod start</p></li>
+<li><p>etc.</p>
+
+<ul>
+<li>$ (sudo) npm install coffee-script -g</li>
+<li>$ (sudo) npm install mocha -g</li>
+</ul>
+</li>
 </ul>
 
 ]]></content>
