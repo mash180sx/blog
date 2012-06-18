@@ -9,9 +9,9 @@
   <meta name="author" content="Masa Shio">
 
   
-  <meta name="description" content="My My office environment Windows XP (32bits version)
-CPU : core i3 370M
-to connect internet through firewall Todo install(upgrade) VMware player 4.04 &hellip;">
+  <meta name="description" content="My office is using the environment of the WindowsXP.
+Developing with node.js was inconvenient things on Windows XP.
+Therefore, recently, I began to &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -92,7 +92,10 @@ to connect internet through firewall Todo install(upgrade) VMware player 4.04 &h
   </header>
 
 
-<div class="entry-content"><p>My</p>
+<div class="entry-content"><p>My office is using the environment of the WindowsXP.
+Developing with node.js was inconvenient things on Windows XP.
+Therefore, recently, I began to develop in linux on VMware.
+Here, I&#8217;ll describe how to build environment(for myself).</p>
 
 <h3>My office environment</h3>
 
@@ -103,19 +106,23 @@ to connect internet through firewall Todo install(upgrade) VMware player 4.04 &h
 </ul>
 
 
-<h1>Todo</h1>
+<h3>To build environment</h3>
 
-<h3>install(upgrade) VMware player 4.04 (upgrade last week)</h3>
-
-<h3>install Fedora 17 64bits KDE to VMware</h3>
+<ul>
+<li>install(upgrade) VMware player 4.04 (upgrade last week)</li>
+<li>install Fedora 17 64bits KDE to VMware
 
 <ul>
 <li>recently,my favorite desktop is KDE</li>
-<li>if CPU is 64bits, Guest OS can select 64bits OS
+<li>if CPU is 64bits, Guest OS can select 64bits OS</li>
+</ul>
+</li>
+<li>proxy setting
 
-<h3>proxy setting</h3>
-
-<p>create the following files in /etc/profile.d, and then this will work in <em>any</em> shell for <em>any</em> user of the system</p></li>
+<ul>
+<li>create the following files in /etc/profile.d, and then this will work in <em>any</em> shell for <em>any</em> user of the system</li>
+</ul>
+</li>
 </ul>
 
 
@@ -147,21 +154,35 @@ to connect internet through firewall Todo install(upgrade) VMware player 4.04 &h
 </span></code></pre></td></tr></table></div></figure>
 
 
-<h3>update fedora</h3>
+<ul>
+<li><p>update fedora</p>
 
-<p>  $ sudo yum -y update</p>
+<ul>
+<li>$ sudo yum -y update</li>
+</ul>
+</li>
+<li><p>set up Japanese environment</p>
 
-<h3>set up Japanese environment</h3>
+<ul>
+<li>$ sudo yum -y groupinstall &#8220;Japanese Support&#8221;</li>
+<li>groupinstall is so convenient, and I install any groups</li>
+</ul>
+</li>
+<li><p>set up Development environment</p>
 
-<p>  $ sudo yum -y groupinstall &#8220;Japanese Support&#8221;
-  * groupinstall is so convenient, and I install any groups</p>
+<ul>
+<li>$ sudo yum -y groupinstall &#8220;Development Libraries&#8221;</li>
+<li>$ sudo yum -y groupinstall &#8220;Development Tools&#8221;</li>
+<li>$ sudo yum -y install kate</li>
+<li>my favorite editor :)</li>
+</ul>
+</li>
+<li><p>set up git (proxy)</p></li>
+<li><p>set up node.js</p></li>
+<li><p>set up npm proxy</p></li>
+<li><p>set up mongodb</p></li>
+</ul>
 
-<h3>set up Development environment</h3>
-
-<p>  $ sudo yum -y groupinstall &#8220;Development Libraries&#8221;
-  $ sudo yum -y groupinstall &#8220;Development Tools&#8221;
-  $ sudo yum -y install kate
-  * my favorite editor :)</p>
 </div>
 
 
@@ -189,7 +210,7 @@ to connect internet through firewall Todo install(upgrade) VMware player 4.04 &h
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/fedora/'>fedora</a>, <a class='category' href='/blog/categories/linux/'>linux</a>, <a class='category' href='/blog/categories/vmware/'>vmware</a>
+    <a class='category' href='/blog/categories/fedora/'>fedora</a>, <a class='category' href='/blog/categories/japanese/'>japanese</a>, <a class='category' href='/blog/categories/linux/'>linux</a>, <a class='category' href='/blog/categories/vmware/'>vmware</a>
   
 </span>
 
