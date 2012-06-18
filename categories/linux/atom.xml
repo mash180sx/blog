@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: linux | Hijiri's blog at github]]></title>
+  <link href="http://mash180sx.github.com/blog/categories/linux/atom.xml" rel="self"/>
+  <link href="http://mash180sx.github.com/blog/"/>
+  <updated>2012-06-18T12:23:14+09:00</updated>
+  <id>http://mash180sx.github.com/blog/</id>
+  <author>
+    <name><![CDATA[Masa Shio]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[memo: Office VMware setting]]></title>
+    <link href="http://mash180sx.github.com/blog/2012/06/18/memo-office-vmware-setting/"/>
+    <updated>2012-06-18T10:53:00+09:00</updated>
+    <id>http://mash180sx.github.com/blog/2012/06/18/memo-office-vmware-setting</id>
+    <content type="html"><![CDATA[<h3>Office environment</h3>
+
+<ul>
+<li>Windows XP (32bits version)</li>
+<li>CPU : core i3 370M</li>
+<li>to connect internet through firewall</li>
+</ul>
+
+
+<h3>Todo</h3>
+
+<ul>
+<li>install(upgrade) VMware player 4.04 (upgrade last week)</li>
+<li>install Fedora 17 64bits KDE to VMware
+
+<ul>
+<li>recently,my favorite desktop is KDE</li>
+<li>if CPU is 64bits, Guest OS can select 64bits OS</li>
+</ul>
+</li>
+<li>proxy setting
+create the following files in /etc/profile.d, and then this will work in <em>any</em> shell for <em>any</em> user of the system</li>
+</ul>
+
+
+<p>``` sh</p>
+
+<h1>proxy.sh</h1>
+
+<p>export http_proxy=http://host.com:port/
+export https_proxy=http://host.com:port/
+export HTTP_PROXY=http://host.com:port/
+export HTTPS_PROXY=http://host.com:port/
+```</p>
+
+<p>``` csh</p>
+
+<h1>proxy.csh</h1>
+
+<p>setenv http_proxy http://host.com:port/
+setenv https_proxy http://host.com:port/
+setenv HTTP_PROXY http://host.com:port/
+setenv HTTPS_PROXY http://host.com:port/
+```</p>
+
+<ul>
+<li><p>update fedora
+$ sudo yum -y update</p></li>
+<li><p>set up Japanese environment
+$ sudo yum -y groupinstall "Japanese Support"</p>
+
+<ul>
+<li>groupinstall is so convenient, and I install any groups</li>
+</ul>
+</li>
+<li>set up Development environment
+$ sudo yum -y groupinstall "</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>
