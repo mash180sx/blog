@@ -240,6 +240,31 @@ Here, I&#8217;ll describe (for myself) how to build environment.</p>
 </li>
 </ul>
 </li>
+<li><p>disabel SELinux (if necessary)</p>
+
+<ul>
+<li><h1>systemctl stop iptables.service</h1></li>
+<li><h1>systemctl stop ip6tables.service</h1></li>
+<li><h1>systemctl disable iptables.service</h1></li>
+<li><h1>systemctl disable ip6tables.service</h1></li>
+<li>edit following file</li>
+</ul>
+</li>
+</ul>
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'><span class="c"># /etc/sysconfig/selinux</span>
+</span><span class='line'>
+</span><span class='line'><span class="c"># to change</span>
+</span><span class='line'><span class="nv">SELINUX</span><span class="o">=</span>disabled
+</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
 <li><p>setup git (proxy setting &#8211;> not necessary)</p>
 
 <ul>
@@ -288,9 +313,9 @@ Here, I&#8217;ll describe (for myself) how to build environment.</p>
 
 
 <ul>
-<li>$ (sudo) yum update</li>
-<li>$ (sudo) yum install mongo-10gen mongo-10gen-server</li>
-<li><p>$ (sudo) /etc/rc.d/init.d/mongod start</p></li>
+<li><h1>yum update</h1></li>
+<li><h1>yum install mongo-10gen mongo-10gen-server</h1></li>
+<li><h1>/etc/rc.d/init.d/mongod start</h1></li>
 <li><p>etc.</p>
 
 <ul>
