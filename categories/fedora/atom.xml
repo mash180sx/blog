@@ -4,7 +4,7 @@
   <title><![CDATA[Category: fedora | Hijiri's blog at github]]></title>
   <link href="http://mash180sx.github.com/blog/categories/fedora/atom.xml" rel="self"/>
   <link href="http://mash180sx.github.com/blog/"/>
-  <updated>2012-06-18T15:00:53+09:00</updated>
+  <updated>2012-06-18T15:39:57+09:00</updated>
   <id>http://mash180sx.github.com/blog/</id>
   <author>
     <name><![CDATA[Masa Shio]]></name>
@@ -73,15 +73,21 @@ setenv HTTPS_PROXY http://host.com:port/
 ```</p>
 
 <ul>
-<li><p>update fedora
-  $ sudo yum -y update</p></li>
-<li><p>setup Japanese environment
-  $ sudo yum -y groupinstall "Japanese Support"</p>
-
-<pre><code>  * groupinstall is so convenient, and I install any groups
-</code></pre>
+<li><p>update fedora</p>
 
 <ul>
+<li>$ sudo yum -y update</li>
+</ul>
+</li>
+<li><p>setup Japanese environment</p>
+
+<ul>
+<li>$ sudo yum -y groupinstall "Japanese Support"
+
+<ul>
+<li>groupinstall is so convenient, and I install any groups</li>
+</ul>
+</li>
 <li>create or edit following files
 ``` sh
 
@@ -91,7 +97,7 @@ setenv HTTPS_PROXY http://host.com:port/
 </ul>
 
 
-<h1>to append last line</h1>
+<h1>to change or to append last line</h1>
 
 <p>LANG="ja_JP.UTF-8"</p>
 
@@ -114,7 +120,11 @@ export LANG
 <li>$ sudo yum -y groupinstall "Development Libraries"</li>
 <li>$ sudo yum -y groupinstall "Development Tools"</li>
 <li>$ sudo yum -y install kate
-my favorite editor :)</li>
+
+<ul>
+<li>my favorite editor :)</li>
+</ul>
+</li>
 </ul>
 </li>
 <li><p>setup vmware-tools</p>
@@ -123,7 +133,12 @@ my favorite editor :)</li>
 <li>VMware menu : [Vertural machine(V)] -> [VMware tools install] select</li>
 <li>select and extract VMware Tools (mount as CD device)</li>
 <li>to go extracting directory and install
-$ sudo ./vmware-install.pl</li>
+
+<ul>
+<li>$ sudo ./vmware-install.pl</li>
+<li>--> Faild ... TODO</li>
+</ul>
+</li>
 </ul>
 </li>
 <li><p>setup git (proxy)</p></li>

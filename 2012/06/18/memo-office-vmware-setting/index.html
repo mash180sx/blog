@@ -155,15 +155,21 @@ Here, I&#8217;ll describe (for myself) how to build environment.</p>
 
 
 <ul>
-<li><p>update fedora
-  $ sudo yum -y update</p></li>
-<li><p>setup Japanese environment
-  $ sudo yum -y groupinstall &#8220;Japanese Support&#8221;</p>
-
-<pre><code>  * groupinstall is so convenient, and I install any groups
-</code></pre>
+<li><p>update fedora</p>
 
 <ul>
+<li>$ sudo yum -y update</li>
+</ul>
+</li>
+<li><p>setup Japanese environment</p>
+
+<ul>
+<li>$ sudo yum -y groupinstall &#8220;Japanese Support&#8221;
+
+<ul>
+<li>groupinstall is so convenient, and I install any groups</li>
+</ul>
+</li>
 <li>create or edit following files</li>
 </ul>
 </li>
@@ -176,7 +182,7 @@ Here, I&#8217;ll describe (for myself) how to build environment.</p>
 <span class='line-number'>4</span>
 </pre></td><td class='code'><pre><code class='sh'><span class='line'><span class="c"># /etc/sysconfig/i18n</span>
 </span><span class='line'>
-</span><span class='line'><span class="c"># to append last line</span>
+</span><span class='line'><span class="c"># to change or to append last line</span>
 </span><span class='line'><span class="nv">LANG</span><span class="o">=</span><span class="s2">&quot;ja_JP.UTF-8&quot;</span>
 </span></code></pre></td></tr></table></div></figure>
 
@@ -203,7 +209,11 @@ Here, I&#8217;ll describe (for myself) how to build environment.</p>
 <li>$ sudo yum -y groupinstall &#8220;Development Libraries&#8221;</li>
 <li>$ sudo yum -y groupinstall &#8220;Development Tools&#8221;</li>
 <li>$ sudo yum -y install kate
-my favorite editor :)</li>
+
+<ul>
+<li>my favorite editor :)</li>
+</ul>
+</li>
 </ul>
 </li>
 <li><p>setup vmware-tools</p>
@@ -212,7 +222,12 @@ my favorite editor :)</li>
 <li>VMware menu : [Vertural machine(V)] -> [VMware tools install] select</li>
 <li>select and extract VMware Tools (mount as CD device)</li>
 <li>to go extracting directory and install
-$ sudo ./vmware-install.pl</li>
+
+<ul>
+<li>$ sudo ./vmware-install.pl</li>
+<li>&#8211;> Faild &#8230; TODO</li>
+</ul>
+</li>
 </ul>
 </li>
 <li><p>setup git (proxy)</p></li>
