@@ -113,6 +113,7 @@ Here, I&#8217;ll describe (for myself) how to build environment.</p>
 <li>install Fedora 17 64bits KDE to VMware
 
 <ul>
+<li>network setting -> brige (easy to connect internet)</li>
 <li>recently,my favorite desktop is KDE</li>
 <li>if CPU is 64bits, Guest OS can select 64bits OS</li>
 </ul>
@@ -120,6 +121,15 @@ Here, I&#8217;ll describe (for myself) how to build environment.</p>
 <li>proxy setting
 
 <ul>
+<li>[System settings]->[Network Settings]->[Proxy]
+
+<ul>
+<li>select [Use manually &#8230;] radio button</li>
+<li>input -> [HTTP Proxy:] host.com [Port:] port</li>
+<li>check [Use this proxy &#8230;] checkbox</li>
+<li>push [Apply] button</li>
+</ul>
+</li>
 <li>create the following files in /etc/profile.d, and then this will work in <em>any</em> shell for <em>any</em> user of the system</li>
 </ul>
 </li>
@@ -167,7 +177,7 @@ Here, I&#8217;ll describe (for myself) how to build environment.</p>
 <li>$ sudo yum -y groupinstall &#8220;Japanese Support&#8221;
 
 <ul>
-<li>groupinstall is so convenient, and I install any groups</li>
+<li>groupinstall is convenient, so I installed some groups</li>
 </ul>
 </li>
 <li>create or edit following files</li>
@@ -230,10 +240,51 @@ Here, I&#8217;ll describe (for myself) how to build environment.</p>
 </li>
 </ul>
 </li>
-<li><p>setup git (proxy)</p></li>
-<li><p>setup node.js</p></li>
-<li><p>setup npm proxy</p></li>
-<li><p>setup mongodb</p></li>
+<li><p>setup git (proxy setting &#8211;> not necessary)</p>
+
+<ul>
+<li>$ git config &#8211;global user.name &#8220;User Name&#8221;</li>
+<li>$ git config &#8211;global user.email &#8220;account@host.com&#8221;</li>
+</ul>
+</li>
+<li><p>install google chrome (if necessary)</p></li>
+<li><p>install and setup node.js</p>
+
+<ul>
+<li>$ sudo yum localinstall &#8211;nogpgcheck http://nodejs.tchol.org/repocfg/fedora/nodejs-stable-release.noarch.rpm</li>
+<li>$ sudo yum install nodejs npm</li>
+<li>$ sudo ln -s /usr/bin/nodejs /usr/local/bin/node</li>
+</ul>
+</li>
+<li><p>(setup npm proxy &#8211;> not necessary)</p></li>
+<li><p>setup mongodb Configure Package Management System (YUM)</p>
+
+<ul>
+<li>Create a /etc/yum.repos.d/10gen.repo file to hold information about your repository. If you are running a 64-bit system (recommended,) place the following configuration in /etc/yum.repos.d/10gen.repo file:</li>
+</ul>
+</li>
+</ul>
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'><span class="c">#/etc/yum.repos.d/10gen.repo</span>
+</span><span class='line'><span class="o">[</span>10gen<span class="o">]</span>
+</span><span class='line'><span class="nv">name</span><span class="o">=</span>10gen Repository
+</span><span class='line'><span class="nv">baseurl</span><span class="o">=</span>http://downloads-distro.mongodb.org/repo/redhat/os/x86_64
+</span><span class='line'><span class="nv">gpgcheck</span><span class="o">=</span>0
+</span><span class='line'><span class="nv">enabled</span><span class="o">=</span>1
+</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>$ (sudo) yum update</li>
+<li>$ (sudo) yum install mongo-10gen mongo-10gen-server</li>
+<li>$ (sudo) /etc/rc.d/init.d/mongod start</li>
 </ul>
 
 </div>
