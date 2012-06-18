@@ -4,7 +4,7 @@
   <title><![CDATA[Hijiri's blog at github]]></title>
   <link href="http://mash180sx.github.com/blog/atom.xml" rel="self"/>
   <link href="http://mash180sx.github.com/blog/"/>
-  <updated>2012-06-05T14:07:58+09:00</updated>
+  <updated>2012-06-18T11:36:26+09:00</updated>
   <id>http://mash180sx.github.com/blog/</id>
   <author>
     <name><![CDATA[Masa Shio]]></name>
@@ -14,24 +14,77 @@
 
   
   <entry>
+    <title type="html"><![CDATA[memo: Office VMware setting]]></title>
+    <link href="http://mash180sx.github.com/blog/2012/06/18/memo-office-vmware-setting/"/>
+    <updated>2012-06-18T10:53:00+09:00</updated>
+    <id>http://mash180sx.github.com/blog/2012/06/18/memo-office-vmware-setting</id>
+    <content type="html"><![CDATA[<h3>Office environment</h3>
+
+<p><em>Windows XP (32bits)
+</em>core i3 370M</p>
+
+<h3>Todo</h3>
+
+<p><em>upgrade VMware player 4.04 (upgrade last week)
+</em>install Fedora 17 64bit KDE to VMware
+  <em>recently,my favorite desktop is KDE
+  </em>if CPU is 64bits, Guest OS can select 64bits OS
+<em>proxy setting
+create the following files in /etc/profile.d, and then this will work in </em>any<em> shell for </em>any* user of the system</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'><span class="c">#proxy.sh</span>
+</span><span class='line'><span class="nb">export </span><span class="nv">http_proxy</span><span class="o">=</span>http://host.com:port/
+</span><span class='line'><span class="nb">export </span><span class="nv">ftp_proxy</span><span class="o">=</span>http://host.com:port/
+</span><span class='line'><span class="nb">export </span><span class="nv">no_proxy</span><span class="o">=</span>.domain.com
+</span><span class='line'><span class="nb">export </span><span class="nv">HTTP_PROXY</span><span class="o">=</span>http://host.com:port/
+</span><span class='line'><span class="nb">export </span><span class="nv">FTP_PROXY</span><span class="o">=</span>http://host.com:port/
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='csh'><span class='line'><span class="c">#proxy.csh</span>
+</span><span class='line'><span class="nb">setenv </span>http_proxy http://host.com:port/
+</span><span class='line'><span class="nb">setenv </span>ftp_proxy http://host.com:port/
+</span><span class='line'><span class="nb">setenv </span>no_proxy .domain.com
+</span><span class='line'><span class="nb">setenv </span>HTTP_PROXY http://host.com:port/
+</span><span class='line'><span class="nb">setenv </span>FTP_PROXY http://host.com:port/
+</span></code></pre></td></tr></table></div></figure>
+
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[Hello, octopress! Hello, github blog!]]></title>
     <link href="http://mash180sx.github.com/blog/2012/06/05/hello/"/>
-    <updated>2012-06-05T12:39:00+09:00</updated>
+    <updated>2012-06-05T15:28:00+09:00</updated>
     <id>http://mash180sx.github.com/blog/2012/06/05/hello</id>
     <content type="html"><![CDATA[<p>I&#8217;ll try to post an article through the octopress to github from today.</p>
 
-<p>I wrestled with JavaScript and node.js, and also touched
-on a variety of other languages, here about six months.
+<p>I wrestled(and now be wrestling,too) with JavaScript and node.js,
+and also touched on a variety of other languages, here about six months.
 However, I did not leave anything as a record,
 I decided to start recording, even little by little,
-something did, something struggled(has been struggle),
+something did, something struggled(have been struggle),
 and something to try.</p>
 
 <p>I chose the github for log, because I think it is the best  warehouse
 for development projects, and I think whether it is reasonable
 to place a blog near it.</p>
 
-<p>I think most of the records are for myself,
+<p>Perhaps, most of the archives are for myself,
 but I want to be able to leave the articles for someone&#8217;s help.</p>
 
 <p>(and I try to write in English)</p>
