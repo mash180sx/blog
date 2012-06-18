@@ -94,30 +94,38 @@ install Fedora 17 64bit KDE to VMware &hellip;">
 
 <div class="entry-content"><h3>Office environment</h3>
 
-<p><em>Windows XP (32bits)
-</em>core i3 370M</p>
+<ul>
+<li>Windows XP (32bits)</li>
+<li>core i3 370M</li>
+</ul>
+
 
 <h3>Todo</h3>
 
-<p><em>upgrade VMware player 4.04 (upgrade last week)
-</em>install Fedora 17 64bit KDE to VMware
-  <em>recently,my favorite desktop is KDE
-  </em>if CPU is 64bits, Guest OS can select 64bits OS
-<em>proxy setting
-create the following files in /etc/profile.d, and then this will work in </em>any<em> shell for </em>any* user of the system</p>
+<ul>
+<li>upgrade VMware player 4.04 (upgrade last week)</li>
+<li>install Fedora 17 64bit KDE to VMware
+
+<ul>
+<li>recently,my favorite desktop is KDE</li>
+<li>if CPU is 64bits, Guest OS can select 64bits OS</li>
+</ul>
+</li>
+<li>proxy setting
+create the following files in /etc/profile.d, and then this will work in <em>any</em> shell for <em>any</em> user of the system</li>
+</ul>
+
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
 <span class='line-number'>5</span>
-<span class='line-number'>6</span>
 </pre></td><td class='code'><pre><code class='sh'><span class='line'><span class="c">#proxy.sh</span>
 </span><span class='line'><span class="nb">export </span><span class="nv">http_proxy</span><span class="o">=</span>http://host.com:port/
-</span><span class='line'><span class="nb">export </span><span class="nv">ftp_proxy</span><span class="o">=</span>http://host.com:port/
-</span><span class='line'><span class="nb">export </span><span class="nv">no_proxy</span><span class="o">=</span>.domain.com
+</span><span class='line'><span class="nb">export </span><span class="nv">https_proxy</span><span class="o">=</span>http://host.com:port/
 </span><span class='line'><span class="nb">export </span><span class="nv">HTTP_PROXY</span><span class="o">=</span>http://host.com:port/
-</span><span class='line'><span class="nb">export </span><span class="nv">FTP_PROXY</span><span class="o">=</span>http://host.com:port/
+</span><span class='line'><span class="nb">export </span><span class="nv">HTTPS_PROXY</span><span class="o">=</span>http://host.com:port/
 </span></code></pre></td></tr></table></div></figure>
 
 
@@ -128,13 +136,11 @@ create the following files in /etc/profile.d, and then this will work in </em>an
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
 <span class='line-number'>5</span>
-<span class='line-number'>6</span>
 </pre></td><td class='code'><pre><code class='csh'><span class='line'><span class="c">#proxy.csh</span>
 </span><span class='line'><span class="nb">setenv </span>http_proxy http://host.com:port/
-</span><span class='line'><span class="nb">setenv </span>ftp_proxy http://host.com:port/
-</span><span class='line'><span class="nb">setenv </span>no_proxy .domain.com
+</span><span class='line'><span class="nb">setenv </span>https_proxy http://host.com:port/
 </span><span class='line'><span class="nb">setenv </span>HTTP_PROXY http://host.com:port/
-</span><span class='line'><span class="nb">setenv </span>FTP_PROXY http://host.com:port/
+</span><span class='line'><span class="nb">setenv </span>HTTPS_PROXY http://host.com:port/
 </span></code></pre></td></tr></table></div></figure>
 
 </div>

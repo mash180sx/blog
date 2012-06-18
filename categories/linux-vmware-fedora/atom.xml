@@ -4,7 +4,7 @@
   <title><![CDATA[Category: linux,vmware,fedora | Hijiri's blog at github]]></title>
   <link href="http://mash180sx.github.com/blog/categories/linux-vmware-fedora/atom.xml" rel="self"/>
   <link href="http://mash180sx.github.com/blog/"/>
-  <updated>2012-06-18T11:36:26+09:00</updated>
+  <updated>2012-06-18T11:53:36+09:00</updated>
   <id>http://mash180sx.github.com/blog/</id>
   <author>
     <name><![CDATA[Masa Shio]]></name>
@@ -20,27 +20,36 @@
     <id>http://mash180sx.github.com/blog/2012/06/18/memo-office-vmware-setting</id>
     <content type="html"><![CDATA[<h3>Office environment</h3>
 
-<p><em>Windows XP (32bits)
-</em>core i3 370M</p>
+<ul>
+<li>Windows XP (32bits)</li>
+<li>core i3 370M</li>
+</ul>
+
 
 <h3>Todo</h3>
 
-<p><em>upgrade VMware player 4.04 (upgrade last week)
-</em>install Fedora 17 64bit KDE to VMware
-  <em>recently,my favorite desktop is KDE
-  </em>if CPU is 64bits, Guest OS can select 64bits OS
-<em>proxy setting
-create the following files in /etc/profile.d, and then this will work in </em>any<em> shell for </em>any* user of the system</p>
+<ul>
+<li>upgrade VMware player 4.04 (upgrade last week)</li>
+<li>install Fedora 17 64bit KDE to VMware
+
+<ul>
+<li>recently,my favorite desktop is KDE</li>
+<li>if CPU is 64bits, Guest OS can select 64bits OS</li>
+</ul>
+</li>
+<li>proxy setting
+create the following files in /etc/profile.d, and then this will work in <em>any</em> shell for <em>any</em> user of the system</li>
+</ul>
+
 
 <p>``` sh</p>
 
 <h1>proxy.sh</h1>
 
 <p>export http_proxy=http://host.com:port/
-export ftp_proxy=http://host.com:port/
-export no_proxy=.domain.com
+export https_proxy=http://host.com:port/
 export HTTP_PROXY=http://host.com:port/
-export FTP_PROXY=http://host.com:port/
+export HTTPS_PROXY=http://host.com:port/
 ```</p>
 
 <p>``` csh</p>
@@ -48,10 +57,9 @@ export FTP_PROXY=http://host.com:port/
 <h1>proxy.csh</h1>
 
 <p>setenv http_proxy http://host.com:port/
-setenv ftp_proxy http://host.com:port/
-setenv no_proxy .domain.com
+setenv https_proxy http://host.com:port/
 setenv HTTP_PROXY http://host.com:port/
-setenv FTP_PROXY http://host.com:port/
+setenv HTTPS_PROXY http://host.com:port/
 ```</p>
 ]]></content>
   </entry>
