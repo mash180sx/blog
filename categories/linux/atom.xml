@@ -4,7 +4,7 @@
   <title><![CDATA[Category: linux | Hijiri's blog at github]]></title>
   <link href="http://mash180sx.github.com/blog/categories/linux/atom.xml" rel="self"/>
   <link href="http://mash180sx.github.com/blog/"/>
-  <updated>2012-06-18T13:45:03+09:00</updated>
+  <updated>2012-06-18T15:00:53+09:00</updated>
   <id>http://mash180sx.github.com/blog/</id>
   <author>
     <name><![CDATA[Masa Shio]]></name>
@@ -21,7 +21,7 @@
     <content type="html"><![CDATA[<p>My office is using the environment of the WindowsXP.
 Developing with node.js was inconvenient things on Windows XP.
 Therefore, recently, I began to develop in linux on VMware.
-Here, I'll describe how to build environment(for myself).</p>
+Here, I'll describe (for myself) how to build environment.</p>
 
 <h3>My office environment</h3>
 
@@ -73,32 +73,63 @@ setenv HTTPS_PROXY http://host.com:port/
 ```</p>
 
 <ul>
-<li><p>update fedora</p>
+<li><p>update fedora
+  $ sudo yum -y update</p></li>
+<li><p>setup Japanese environment
+  $ sudo yum -y groupinstall "Japanese Support"</p>
+
+<pre><code>  * groupinstall is so convenient, and I install any groups
+</code></pre>
 
 <ul>
-<li>$ sudo yum -y update</li>
+<li>create or edit following files
+``` sh
+
+<h1>/etc/sysconfig/i18n</h1></li>
 </ul>
 </li>
-<li><p>set up Japanese environment</p>
+</ul>
+
+
+<h1>to append last line</h1>
+
+<p>LANG="ja_JP.UTF-8"</p>
+
+<p>```</p>
+
+<p>``` sh</p>
+
+<h1>~/.bash_profile</h1>
+
+<h1>to append last line</h1>
+
+<p>LANG=ja_JP.UTR-8
+export LANG
+```</p>
 
 <ul>
-<li>$ sudo yum -y groupinstall "Japanese Support"</li>
-<li>groupinstall is so convenient, and I install any groups</li>
-</ul>
-</li>
-<li><p>set up Development environment</p>
+<li><p>setup Development environment</p>
 
 <ul>
 <li>$ sudo yum -y groupinstall "Development Libraries"</li>
 <li>$ sudo yum -y groupinstall "Development Tools"</li>
-<li>$ sudo yum -y install kate</li>
-<li>my favorite editor :)</li>
+<li>$ sudo yum -y install kate
+my favorite editor :)</li>
 </ul>
 </li>
-<li><p>set up git (proxy)</p></li>
-<li><p>set up node.js</p></li>
-<li><p>set up npm proxy</p></li>
-<li><p>set up mongodb</p></li>
+<li><p>setup vmware-tools</p>
+
+<ul>
+<li>VMware menu : [Vertural machine(V)] -> [VMware tools install] select</li>
+<li>select and extract VMware Tools (mount as CD device)</li>
+<li>to go extracting directory and install
+$ sudo ./vmware-install.pl</li>
+</ul>
+</li>
+<li><p>setup git (proxy)</p></li>
+<li><p>setup node.js</p></li>
+<li><p>setup npm proxy</p></li>
+<li><p>setup mongodb</p></li>
 </ul>
 
 ]]></content>
