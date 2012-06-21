@@ -4,7 +4,7 @@
   <title><![CDATA[Category: linux | Hijiri's blog at github]]></title>
   <link href="http://mash180sx.github.com/blog/categories/linux/atom.xml" rel="self"/>
   <link href="http://mash180sx.github.com/blog/"/>
-  <updated>2012-06-18T19:10:38+09:00</updated>
+  <updated>2012-06-21T09:26:29+09:00</updated>
   <id>http://mash180sx.github.com/blog/</id>
   <author>
     <name><![CDATA[Masa Shio]]></name>
@@ -189,6 +189,18 @@ export LANG
 <li>$ sudo yum localinstall --nogpgcheck http://nodejs.tchol.org/repocfg/fedora/nodejs-stable-release.noarch.rpm</li>
 <li>$ sudo yum install nodejs npm</li>
 <li>$ sudo ln -s /usr/bin/nodejs /usr/local/bin/node</li>
+</ul>
+</li>
+</ul>
+
+
+<h5>P.S. 2012/06/21</h5>
+
+<ul>
+<li><p>$ sudo yum install nodejs-devel node-waf</p>
+
+<ul>
+<li>need for node.js module 'iconv-jp'</li>
 </ul>
 </li>
 <li><p>setup npm proxy</p>
