@@ -4,7 +4,7 @@
   <title><![CDATA[Category: fedora | Hijiri's blog at github]]></title>
   <link href="http://mash180sx.github.com/blog/categories/fedora/atom.xml" rel="self"/>
   <link href="http://mash180sx.github.com/blog/"/>
-  <updated>2012-06-21T14:11:43+09:00</updated>
+  <updated>2012-06-21T16:44:30+09:00</updated>
   <id>http://mash180sx.github.com/blog/</id>
   <author>
     <name><![CDATA[Masa Shio]]></name>
@@ -182,7 +182,13 @@ export LANG
 <li>$ git config --global user.email "account@host.com"</li>
 </ul>
 </li>
-<li><p>install google chrome (if necessary)</p></li>
+<li><p>install google chrome (if necessary)</p>
+
+<ul>
+<li>search keyword "fedora chrome" and append yum repository     ( &lt;-- append in 2012/06/21)</li>
+<li>curl ssl check disabled (search keyword "curl ssl setting")   ( &lt;-- append in 2012/06/21)</li>
+</ul>
+</li>
 <li><p>install and setup node.js</p>
 
 <ul>
